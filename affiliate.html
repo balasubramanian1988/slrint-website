@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slrint Affiliate Program — Earn 20% Recurring Commission</title>
+  <meta name="description" content="Join the Slrint affiliate program. Earn 20% recurring commission every month for every Amazon seller you refer.">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'DM Sans', system-ui, sans-serif; background: #F8FAFC; color: #0F172A; }
+
+    /* NAV */
+    nav { background: #fff; border-bottom: 1px solid #E2E8F0; padding: 0 40px; height: 60px; display: flex; align-items: center; justify-content: space-between; position: sticky; top: 0; z-index: 100; }
+    .nav-logo { font-size: 20px; font-weight: 900; color: #0F172A; letter-spacing: 1px; text-decoration: none; }
+    .nav-logo span { color: #2563EB; }
+    .nav-cta { padding: 8px 20px; background: linear-gradient(135deg, #2563EB, #3B82F6); color: #fff; border: none; border-radius: 8px; font-size: 13px; font-weight: 600; cursor: pointer; font-family: 'DM Sans', sans-serif; text-decoration: none; }
+
+    /* HERO */
+    .hero { background: linear-gradient(135deg, #0F172A 0%, #1E3A5F 100%); padding: 80px 40px; text-align: center; color: #fff; }
+    .hero-badge { display: inline-block; font-size: 12px; padding: 5px 14px; borderRadius: 20px; background: rgba(37,99,235,0.3); border: 1px solid rgba(37,99,235,0.5); color: #93C5FD; font-weight: 600; margin-bottom: 20px; letter-spacing: 0.04em; }
+    .hero h1 { font-size: 48px; font-weight: 800; line-height: 1.15; margin-bottom: 20px; }
+    .hero h1 span { color: #60A5FA; }
+    .hero p { font-size: 18px; color: rgba(255,255,255,0.7); max-width: 560px; margin: 0 auto 36px; line-height: 1.7; }
+    .hero-cta { display: inline-block; padding: 14px 32px; background: linear-gradient(135deg, #2563EB, #3B82F6); color: #fff; border: none; border-radius: 10px; font-size: 15px; font-weight: 700; cursor: pointer; font-family: 'DM Sans', sans-serif; text-decoration: none; box-shadow: 0 4px 20px rgba(37,99,235,0.4); }
+    .hero-sub { margin-top: 16px; font-size: 12px; color: rgba(255,255,255,0.4); }
+
+    /* STATS */
+    .stats { background: #fff; padding: 48px 40px; border-bottom: 1px solid #E2E8F0; }
+    .stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; max-width: 900px; margin: 0 auto; text-align: center; }
+    .stat-num { font-size: 36px; font-weight: 800; color: #2563EB; margin-bottom: 4px; }
+    .stat-label { font-size: 13px; color: #64748B; font-weight: 500; }
+
+    /* SECTION */
+    .section { padding: 64px 40px; }
+    .section-center { text-align: center; }
+    .section h2 { font-size: 30px; font-weight: 800; color: #0F172A; margin-bottom: 12px; }
+    .section p { font-size: 15px; color: #64748B; max-width: 560px; margin: 0 auto 40px; line-height: 1.7; }
+
+    /* HOW IT WORKS */
+    .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; max-width: 900px; margin: 0 auto; }
+    .step { background: #fff; border-radius: 14px; padding: 28px; border: 1px solid #E2E8F0; text-align: center; }
+    .step-num { width: 44px; height: 44px; border-radius: 12px; background: linear-gradient(135deg, #EFF6FF, #DBEAFE); color: #2563EB; font-size: 18px; font-weight: 800; display: flex; align-items: center; justify-content: center; margin: 0 auto 16px; border: 1px solid #BFDBFE; }
+    .step h3 { font-size: 15px; font-weight: 700; color: #0F172A; margin-bottom: 8px; }
+    .step p { font-size: 13px; color: #64748B; line-height: 1.6; margin: 0; }
+
+    /* COMMISSION */
+    .commission-section { background: #fff; }
+    .commission-table { max-width: 700px; margin: 0 auto; border-radius: 14px; overflow: hidden; border: 1px solid #E2E8F0; }
+    .commission-header { background: #0F172A; color: #fff; display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; padding: 12px 20px; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; }
+    .commission-row { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; padding: 14px 20px; border-bottom: 1px solid #F1F5F9; font-size: 13px; align-items: center; }
+    .commission-row:last-child { border-bottom: none; }
+    .commission-row:hover { background: #F8FAFC; }
+    .plan-dot { width: 8px; height: 8px; border-radius: 50%; display: inline-block; margin-right: 8px; }
+    .earn-val { font-weight: 700; color: #16A34A; }
+
+    /* EARNINGS CALC */
+    .calc-section { background: linear-gradient(135deg, #EFF6FF, #F5F3FF); }
+    .calc-box { max-width: 600px; margin: 0 auto; background: #fff; border-radius: 16px; padding: 32px; border: 1px solid #E2E8F0; box-shadow: 0 4px 20px rgba(0,0,0,0.06); }
+    .calc-row { display: flex; align-items: center; gap: 16px; margin-bottom: 20px; }
+    .calc-label { font-size: 13px; font-weight: 600; color: #0F172A; width: 160px; flex-shrink: 0; }
+    .calc-range { flex: 1; accent-color: #2563EB; }
+    .calc-val { font-size: 14px; font-weight: 700; color: #2563EB; width: 60px; text-align: right; }
+    .calc-result { background: linear-gradient(135deg, #F0FDF4, #DCFCE7); border-radius: 10px; padding: 20px; text-align: center; border: 1px solid #BBF7D0; }
+    .calc-earn { font-size: 36px; font-weight: 800; color: #16A34A; }
+    .calc-earn-label { font-size: 13px; color: #15803D; margin-top: 4px; }
+
+    /* FAQ */
+    .faq { max-width: 700px; margin: 0 auto; }
+    .faq-item { border-bottom: 1px solid #E2E8F0; padding: 18px 0; cursor: pointer; }
+    .faq-q { font-size: 14px; font-weight: 600; color: #0F172A; display: flex; justify-content: space-between; align-items: center; }
+    .faq-a { font-size: 13px; color: #64748B; line-height: 1.7; margin-top: 10px; display: none; }
+    .faq-item.open .faq-a { display: block; }
+    .faq-item.open .faq-icon { transform: rotate(180deg); }
+    .faq-icon { transition: transform 0.2s; font-size: 12px; color: #94A3B8; }
+
+    /* FOOTER CTA */
+    .footer-cta { background: linear-gradient(135deg, #0F172A, #1E3A5F); padding: 64px 40px; text-align: center; color: #fff; }
+    .footer-cta h2 { font-size: 32px; font-weight: 800; margin-bottom: 12px; }
+    .footer-cta p { font-size: 15px; color: rgba(255,255,255,0.6); margin-bottom: 28px; }
+
+    /* FOOTER */
+    footer { background: #0F172A; border-top: 1px solid #1E293B; padding: 24px 40px; display: flex; justify-content: space-between; align-items: center; }
+    footer a { color: #64748B; text-decoration: none; font-size: 12px; }
+    footer a:hover { color: #94A3B8; }
+    .footer-links { display: flex; gap: 20px; }
+
+    @media (max-width: 768px) {
+      .hero h1 { font-size: 30px; }
+      .steps { grid-template-columns: 1fr; }
+      .stats-grid { grid-template-columns: repeat(2, 1fr); }
+      .commission-header, .commission-row { grid-template-columns: 2fr 1fr 1fr; }
+      .commission-header > *:last-child, .commission-row > *:last-child { display: none; }
+      nav { padding: 0 20px; }
+      .hero, .section { padding: 48px 20px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a class="nav-logo" href="https://slrint.io">SLRI<span>NT</span></a>
+  <a class="nav-cta" href="https://app.slrint.io">Join as Affiliate →</a>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-badge">🤝 AFFILIATE PROGRAM</div>
+  <h1>Earn <span>20% Recurring</span><br>Commission Every Month</h1>
+  <p>Refer Amazon sellers to Slrint and earn 20% of every payment they make — for as long as they stay subscribed.</p>
+  <a class="hero-cta" href="https://app.slrint.io">Start Earning Today →</a>
+  <div class="hero-sub">Free to join · No approval required · Instant dashboard access</div>
+</div>
+
+<!-- STATS -->
+<div class="stats">
+  <div class="stats-grid">
+    <div>
+      <div class="stat-num">20%</div>
+      <div class="stat-label">Recurring Commission</div>
+    </div>
+    <div>
+      <div class="stat-num">30d</div>
+      <div class="stat-label">Cookie Window</div>
+    </div>
+    <div>
+      <div class="stat-num">₹1K</div>
+      <div class="stat-label">Minimum Payout</div>
+    </div>
+    <div>
+      <div class="stat-num">11</div>
+      <div class="stat-label">Tools to Promote</div>
+    </div>
+  </div>
+</div>
+
+<!-- HOW IT WORKS -->
+<div class="section section-center">
+  <h2>How it works</h2>
+  <p>Three simple steps to start earning with Slrint</p>
+  <div class="steps">
+    <div class="step">
+      <div class="step-num">1</div>
+      <h3>Sign up free</h3>
+      <p>Create your affiliate account in under 2 minutes. No approval process, instant access.</p>
+    </div>
+    <div class="step">
+      <div class="step-num">2</div>
+      <h3>Share your link</h3>
+      <p>Get your unique referral link and share it with Amazon sellers — via blog, YouTube, LinkedIn, WhatsApp, or direct.</p>
+    </div>
+    <div class="step">
+      <div class="step-num">3</div>
+      <h3>Earn every month</h3>
+      <p>Earn 20% of every payment your referrals make — month after month, for as long as they stay subscribed.</p>
+    </div>
+  </div>
+</div>
+
+<!-- COMMISSION TABLE -->
+<div class="section commission-section section-center">
+  <h2>Commission by plan</h2>
+  <p>Earn on every plan — the more referrals upgrade, the more you earn.</p>
+  <div class="commission-table">
+    <div class="commission-header">
+      <div>Plan</div>
+      <div>Monthly Price</div>
+      <div>Your Cut</div>
+      <div>Annual Earn/User</div>
+    </div>
+    <div class="commission-row">
+      <div><span class="plan-dot" style="background:#2563EB"></span>Pre-launch</div>
+      <div>₹999/mo</div>
+      <div class="earn-val">₹200/mo</div>
+      <div>₹2,400/yr</div>
+    </div>
+    <div class="commission-row">
+      <div><span class="plan-dot" style="background:#0891B2"></span>Starter</div>
+      <div>₹1,999/mo</div>
+      <div class="earn-val">₹400/mo</div>
+      <div>₹4,800/yr</div>
+    </div>
+    <div class="commission-row" style="background:#F5F3FF">
+      <div><span class="plan-dot" style="background:#7C3AED"></span><strong>Growth</strong> ⭐</div>
+      <div>₹4,999/mo</div>
+      <div class="earn-val" style="font-size:15px">₹1,000/mo</div>
+      <div><strong>₹12,000/yr</strong></div>
+    </div>
+    <div class="commission-row">
+      <div><span class="plan-dot" style="background:#0F172A"></span>Premium</div>
+      <div>₹11,999/mo</div>
+      <div class="earn-val">₹2,400/mo</div>
+      <div>₹28,800/yr</div>
+    </div>
+  </div>
+</div>
+
+<!-- EARNINGS CALCULATOR -->
+<div class="section calc-section section-center">
+  <h2>Calculate your earnings</h2>
+  <p>See how much you can earn based on your referrals</p>
+  <div class="calc-box">
+    <div class="calc-row">
+      <div class="calc-label">Referrals/month</div>
+      <input type="range" class="calc-range" id="refs" min="1" max="50" value="5" oninput="calcEarnings()">
+      <div class="calc-val" id="refsVal">5</div>
+    </div>
+    <div class="calc-row">
+      <div class="calc-label">Avg plan</div>
+      <select id="planSel" onchange="calcEarnings()" style="flex:1;padding:8px 12px;border-radius:7px;border:1px solid #E2E8F0;font-size:13px;font-family:'DM Sans',sans-serif;outline:none;background:#F8FAFC;color:#0F172A;">
+        <option value="999">Pre-launch (₹999)</option>
+        <option value="1999">Starter (₹1,999)</option>
+        <option value="4999" selected>Growth (₹4,999)</option>
+        <option value="11999">Premium (₹11,999)</option>
+      </select>
+      <div class="calc-val"></div>
+    </div>
+    <div class="calc-result">
+      <div class="calc-earn" id="calcEarn">₹5,000</div>
+      <div class="calc-earn-label">estimated monthly earnings</div>
+      <div style="font-size:12px;color:#15803D;margin-top:4px" id="calcAnnual">₹60,000/year</div>
+    </div>
+  </div>
+</div>
+
+<!-- FAQ -->
+<div class="section section-center">
+  <h2>Frequently asked questions</h2>
+  <p>Everything you need to know about the Slrint affiliate program</p>
+  <div class="faq">
+    <div class="faq-item" onclick="toggleFaq(this)">
+      <div class="faq-q">How does the 20% commission work? <span class="faq-icon">▼</span></div>
+      <div class="faq-a">You earn 20% of every payment your referred user makes. If they pay ₹4,999/month for Growth, you earn ₹1,000/month — every month they stay subscribed. It's truly recurring.</div>
+    </div>
+    <div class="faq-item" onclick="toggleFaq(this)">
+      <div class="faq-q">What is the 30-day cookie window? <span class="faq-icon">▼</span></div>
+      <div class="faq-a">When someone clicks your referral link, a 30-day cookie is set. If they sign up and pay anytime within 30 days of clicking your link, you get credited for the referral.</div>
+    </div>
+    <div class="faq-item" onclick="toggleFaq(this)">
+      <div class="faq-q">When do I get paid? <span class="faq-icon">▼</span></div>
+      <div class="faq-a">You can request a payout once your pending earnings reach ₹1,000. We process payouts within 3–5 business days via UPI or bank transfer.</div>
+    </div>
+    <div class="faq-item" onclick="toggleFaq(this)">
+      <div class="faq-q">Who should I refer? <span class="faq-icon">▼</span></div>
+      <div class="faq-a">Slrint is built for Amazon India sellers — brands, D2C founders, private label sellers, and Amazon ads agencies. If you run a blog, YouTube channel, or community for Amazon sellers, this is a perfect fit.</div>
+    </div>
+    <div class="faq-item" onclick="toggleFaq(this)">
+      <div class="faq-q">Is there an approval process? <span class="faq-icon">▼</span></div>
+      <div class="faq-a">No. Any registered Slrint user can join the affiliate program instantly. Just log in to app.slrint.io, go to the Affiliate tab, and your referral link is ready.</div>
+    </div>
+    <div class="faq-item" onclick="toggleFaq(this)">
+      <div class="faq-q">Do I need to be a Slrint customer? <span class="faq-icon">▼</span></div>
+      <div class="faq-a">Yes — you need a free Slrint account to access the affiliate dashboard and generate your referral link. You can sign up for free at app.slrint.io.</div>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER CTA -->
+<div class="footer-cta">
+  <h2>Start earning today</h2>
+  <p>Join hundreds of Amazon sellers and content creators already earning with Slrint</p>
+  <a class="hero-cta" href="https://app.slrint.io">Get Your Referral Link →</a>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <a class="nav-logo" href="https://slrint.io" style="font-size:16px">SLRI<span style="color:#2563EB">NT</span></a>
+  <div class="footer-links">
+    <a href="https://slrint.io/terms">Terms</a>
+    <a href="https://slrint.io/privacy">Privacy</a>
+    <a href="mailto:support@slrint.io">support@slrint.io</a>
+    <a href="https://app.slrint.io">App →</a>
+  </div>
+</footer>
+
+<script>
+function calcEarnings() {
+  const refs = parseInt(document.getElementById('refs').value);
+  const plan = parseInt(document.getElementById('planSel').value);
+  document.getElementById('refsVal').textContent = refs;
+  const monthly = Math.round(refs * plan * 0.20);
+  const annual = monthly * 12;
+  document.getElementById('calcEarn').textContent = '₹' + monthly.toLocaleString('en-IN');
+  document.getElementById('calcAnnual').textContent = '₹' + annual.toLocaleString('en-IN') + '/year';
+}
+
+function toggleFaq(el) {
+  el.classList.toggle('open');
+}
+
+// Track ref click if ?ref= present
+const params = new URLSearchParams(window.location.search);
+const ref = params.get('ref');
+if (ref) {
+  fetch('https://thrise-intel-backend-production.up.railway.app/api/affiliate/click', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ refCode: ref, landingPage: window.location.pathname })
+  }).catch(() => {});
+  // Store in sessionStorage for signup attribution
+  sessionStorage.setItem('slrint_ref', ref);
+}
+
+calcEarnings();
+</script>
+</body>
+</html>
