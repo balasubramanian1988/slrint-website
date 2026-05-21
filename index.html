@@ -8,6 +8,50 @@
 <meta property="og:title" content="Slrint — Intelligence · Ads Optimization · Profits">
 <meta property="og:description" content="Stop flying blind on Amazon. Get intelligence, optimize your ads, and track your profits — all in one suite.">
 <meta property="og:url" content="https://slrint.io">
+
+<!-- ============================================== -->
+<!-- Google Analytics 4 (GA4) -->
+<!-- ============================================== -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XQ3H2HJ7DL"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XQ3H2HJ7DL', {
+    linker: { domains: ['slrint.io', 'app.slrint.io'] }
+  });
+</script>
+
+<!-- ============================================== -->
+<!-- Meta Pixel -->
+<!-- ============================================== -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '3517493361752315');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=3517493361752315&ev=PageView&noscript=1"
+/></noscript>
+
+<!-- ============================================== -->
+<!-- Microsoft Clarity -->
+<!-- ============================================== -->
+<script type="text/javascript">
+  (function(c,l,a,r,i,t,y){
+    c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+    t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+    y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+  })(window, document, "clarity", "script", "wugg9pg9fq");
+</script>
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
@@ -393,6 +437,20 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
   a.addEventListener('click', e => {
     e.preventDefault();
     document.querySelector(a.getAttribute('href'))?.scrollIntoView({ behavior: 'smooth' });
+  });
+});
+
+// Track CTA clicks (Start Free Trial / Log in / Affiliate)
+document.querySelectorAll('a[href*="app.slrint.io"]').forEach(a => {
+  a.addEventListener('click', () => {
+    if (typeof gtag === 'function') gtag('event', 'cta_click_app', { destination: a.href });
+    if (typeof fbq === 'function') fbq('trackCustom', 'AppCTAClick', { destination: a.href });
+  });
+});
+document.querySelectorAll('a[href*="/affiliate.html"]').forEach(a => {
+  a.addEventListener('click', () => {
+    if (typeof gtag === 'function') gtag('event', 'affiliate_link_click');
+    if (typeof fbq === 'function') fbq('trackCustom', 'AffiliateLinkClick');
   });
 });
 </script>
