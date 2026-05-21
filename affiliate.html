@@ -10,13 +10,11 @@
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body { font-family: 'DM Sans', system-ui, sans-serif; background: #F8FAFC; color: #0F172A; }
 
-    /* NAV */
     nav { background: #fff; border-bottom: 1px solid #E2E8F0; padding: 0 40px; height: 60px; display: flex; align-items: center; justify-content: space-between; position: sticky; top: 0; z-index: 100; }
     .nav-logo { font-size: 20px; font-weight: 900; color: #0F172A; letter-spacing: 1px; text-decoration: none; }
     .nav-logo span { color: #2563EB; }
     .nav-cta { padding: 8px 20px; background: linear-gradient(135deg, #2563EB, #3B82F6); color: #fff; border: none; border-radius: 8px; font-size: 13px; font-weight: 600; cursor: pointer; font-family: 'DM Sans', sans-serif; text-decoration: none; }
 
-    /* HERO */
     .hero { background: linear-gradient(135deg, #0F172A 0%, #1E3A5F 100%); padding: 80px 40px; text-align: center; color: #fff; }
     .hero-badge { display: inline-block; font-size: 12px; padding: 5px 14px; borderRadius: 20px; background: rgba(37,99,235,0.3); border: 1px solid rgba(37,99,235,0.5); color: #93C5FD; font-weight: 600; margin-bottom: 20px; letter-spacing: 0.04em; }
     .hero h1 { font-size: 48px; font-weight: 800; line-height: 1.15; margin-bottom: 20px; }
@@ -25,26 +23,22 @@
     .hero-cta { display: inline-block; padding: 14px 32px; background: linear-gradient(135deg, #2563EB, #3B82F6); color: #fff; border: none; border-radius: 10px; font-size: 15px; font-weight: 700; cursor: pointer; font-family: 'DM Sans', sans-serif; text-decoration: none; box-shadow: 0 4px 20px rgba(37,99,235,0.4); }
     .hero-sub { margin-top: 16px; font-size: 12px; color: rgba(255,255,255,0.4); }
 
-    /* STATS */
     .stats { background: #fff; padding: 48px 40px; border-bottom: 1px solid #E2E8F0; }
     .stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; max-width: 900px; margin: 0 auto; text-align: center; }
     .stat-num { font-size: 36px; font-weight: 800; color: #2563EB; margin-bottom: 4px; }
     .stat-label { font-size: 13px; color: #64748B; font-weight: 500; }
 
-    /* SECTION */
     .section { padding: 64px 40px; }
     .section-center { text-align: center; }
     .section h2 { font-size: 30px; font-weight: 800; color: #0F172A; margin-bottom: 12px; }
     .section p { font-size: 15px; color: #64748B; max-width: 560px; margin: 0 auto 40px; line-height: 1.7; }
 
-    /* HOW IT WORKS */
     .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; max-width: 900px; margin: 0 auto; }
     .step { background: #fff; border-radius: 14px; padding: 28px; border: 1px solid #E2E8F0; text-align: center; }
     .step-num { width: 44px; height: 44px; border-radius: 12px; background: linear-gradient(135deg, #EFF6FF, #DBEAFE); color: #2563EB; font-size: 18px; font-weight: 800; display: flex; align-items: center; justify-content: center; margin: 0 auto 16px; border: 1px solid #BFDBFE; }
     .step h3 { font-size: 15px; font-weight: 700; color: #0F172A; margin-bottom: 8px; }
     .step p { font-size: 13px; color: #64748B; line-height: 1.6; margin: 0; }
 
-    /* COMMISSION */
     .commission-section { background: #fff; }
     .commission-table { max-width: 700px; margin: 0 auto; border-radius: 14px; overflow: hidden; border: 1px solid #E2E8F0; }
     .commission-header { background: #0F172A; color: #fff; display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; padding: 12px 20px; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; }
@@ -53,8 +47,8 @@
     .commission-row:hover { background: #F8FAFC; }
     .plan-dot { width: 8px; height: 8px; border-radius: 50%; display: inline-block; margin-right: 8px; }
     .earn-val { font-weight: 700; color: #16A34A; }
+    .commission-note { max-width: 700px; margin: 16px auto 0; text-align: center; font-size: 12px; color: #94A3B8; }
 
-    /* EARNINGS CALC */
     .calc-section { background: linear-gradient(135deg, #EFF6FF, #F5F3FF); }
     .calc-box { max-width: 600px; margin: 0 auto; background: #fff; border-radius: 16px; padding: 32px; border: 1px solid #E2E8F0; box-shadow: 0 4px 20px rgba(0,0,0,0.06); }
     .calc-row { display: flex; align-items: center; gap: 16px; margin-bottom: 20px; }
@@ -65,7 +59,6 @@
     .calc-earn { font-size: 36px; font-weight: 800; color: #16A34A; }
     .calc-earn-label { font-size: 13px; color: #15803D; margin-top: 4px; }
 
-    /* FAQ */
     .faq { max-width: 700px; margin: 0 auto; }
     .faq-item { border-bottom: 1px solid #E2E8F0; padding: 18px 0; cursor: pointer; }
     .faq-q { font-size: 14px; font-weight: 600; color: #0F172A; display: flex; justify-content: space-between; align-items: center; }
@@ -74,12 +67,10 @@
     .faq-item.open .faq-icon { transform: rotate(180deg); }
     .faq-icon { transition: transform 0.2s; font-size: 12px; color: #94A3B8; }
 
-    /* FOOTER CTA */
     .footer-cta { background: linear-gradient(135deg, #0F172A, #1E3A5F); padding: 64px 40px; text-align: center; color: #fff; }
     .footer-cta h2 { font-size: 32px; font-weight: 800; margin-bottom: 12px; }
     .footer-cta p { font-size: 15px; color: rgba(255,255,255,0.6); margin-bottom: 28px; }
 
-    /* FOOTER */
     footer { background: #0F172A; border-top: 1px solid #1E293B; padding: 24px 40px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; }
     footer a { color: #64748B; text-decoration: none; font-size: 12px; }
     footer a:hover { color: #94A3B8; }
@@ -99,13 +90,11 @@
 </head>
 <body>
 
-<!-- NAV -->
 <nav>
   <a class="nav-logo" href="https://slrint.io">SLRI<span>NT</span></a>
   <a class="nav-cta" href="https://app.slrint.io">Join as Affiliate →</a>
 </nav>
 
-<!-- HERO -->
 <div class="hero">
   <div class="hero-badge">🤝 AFFILIATE PROGRAM</div>
   <h1>Earn <span>20% Recurring</span><br>Commission Every Month</h1>
@@ -114,7 +103,6 @@
   <div class="hero-sub">Free to join · No approval required · Instant dashboard access</div>
 </div>
 
-<!-- STATS -->
 <div class="stats">
   <div class="stats-grid">
     <div>
@@ -136,7 +124,6 @@
   </div>
 </div>
 
-<!-- HOW IT WORKS -->
 <div class="section section-center">
   <h2>How it works</h2>
   <p>Three simple steps to start earning with Slrint</p>
@@ -159,14 +146,13 @@
   </div>
 </div>
 
-<!-- COMMISSION TABLE -->
 <div class="section commission-section section-center">
   <h2>Commission by plan</h2>
   <p>Earn on every plan — the more referrals upgrade, the more you earn.</p>
   <div class="commission-table">
     <div class="commission-header">
       <div>Plan</div>
-      <div>Monthly Price</div>
+      <div>Monthly Price<br><span style="font-size:9px;opacity:0.7;font-weight:400">+ 18% GST</span></div>
       <div>Your Cut</div>
       <div>Annual Earn/User</div>
     </div>
@@ -195,9 +181,11 @@
       <div>₹28,800/yr</div>
     </div>
   </div>
+  <div class="commission-note">
+    Commission is calculated on the subscription amount only, excluding GST. Plan prices shown exclude GST.
+  </div>
 </div>
 
-<!-- EARNINGS CALCULATOR -->
 <div class="section calc-section section-center">
   <h2>Calculate your earnings</h2>
   <p>See how much you can earn based on your referrals</p>
@@ -225,14 +213,13 @@
   </div>
 </div>
 
-<!-- FAQ -->
 <div class="section section-center">
   <h2>Frequently asked questions</h2>
   <p>Everything you need to know about the Slrint affiliate program</p>
   <div class="faq">
     <div class="faq-item" onclick="toggleFaq(this)">
       <div class="faq-q">How does the 20% commission work? <span class="faq-icon">▼</span></div>
-      <div class="faq-a">You earn 20% of every payment your referred user makes. If they pay ₹4,999/month for Growth, you earn ₹1,000/month — every month they stay subscribed. It's truly recurring.</div>
+      <div class="faq-a">You earn 20% of every payment your referred user makes (calculated on the subscription amount, excluding GST). If they pay ₹4,999/month for Growth, you earn ₹1,000/month — every month they stay subscribed. It's truly recurring.</div>
     </div>
     <div class="faq-item" onclick="toggleFaq(this)">
       <div class="faq-q">What is the 30-day cookie window? <span class="faq-icon">▼</span></div>
@@ -257,14 +244,12 @@
   </div>
 </div>
 
-<!-- FOOTER CTA -->
 <div class="footer-cta">
   <h2>Start earning today</h2>
   <p>Join hundreds of Amazon sellers and content creators already earning with Slrint</p>
   <a class="hero-cta" href="https://app.slrint.io">Get Your Referral Link →</a>
 </div>
 
-<!-- FOOTER -->
 <footer>
   <a class="nav-logo" href="https://slrint.io" style="font-size:16px">SLRI<span style="color:#2563EB">NT</span></a>
   <div class="footer-links">
@@ -295,7 +280,6 @@ function toggleFaq(el) {
   el.classList.toggle('open');
 }
 
-// Track ref click if ?ref= present
 const params = new URLSearchParams(window.location.search);
 const ref = params.get('ref');
 if (ref) {
@@ -304,7 +288,6 @@ if (ref) {
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ refCode: ref, landingPage: window.location.pathname })
   }).catch(() => {});
-  // Store in sessionStorage for signup attribution
   sessionStorage.setItem('slrint_ref', ref);
 }
 

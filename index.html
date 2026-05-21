@@ -100,7 +100,8 @@ section{padding:72px 5%}
 .popular-badge{position:absolute;top:-12px;left:50%;transform:translateX(-50%);background:linear-gradient(135deg,var(--blue),var(--blue-l));color:#fff;font-size:10px;font-weight:700;padding:3px 14px;border-radius:20px;white-space:nowrap;letter-spacing:.04em}
 .plan-name{font-size:13px;font-weight:700;color:var(--text-m);text-transform:uppercase;letter-spacing:.06em;margin-bottom:8px}
 .plan-price{font-size:36px;font-weight:900;color:var(--navy);line-height:1}
-.plan-period{font-size:13px;color:var(--text-s);margin-bottom:16px}
+.plan-period{font-size:13px;color:var(--text-s);margin-bottom:4px}
+.plan-gst{font-size:11px;color:var(--text-s);margin-bottom:16px;font-weight:500}
 .plan-features{list-style:none;margin:16px 0 24px;display:flex;flex-direction:column;gap:8px}
 .plan-features li{font-size:13px;color:var(--text-m);display:flex;align-items:center;gap:8px}
 .plan-features li::before{content:'✓';color:var(--blue);font-weight:700;flex-shrink:0}
@@ -118,7 +119,6 @@ section{padding:72px 5%}
 .cta-section{background:linear-gradient(135deg,#0F172A,#1E3A5F);padding:80px 5%;text-align:center}
 .cta-section h2{font-size:clamp(28px,4vw,44px);font-weight:900;color:#fff;margin-bottom:14px;letter-spacing:-.02em}
 .cta-section p{font-size:16px;color:#94A3B8;margin-bottom:36px;max-width:500px;margin-left:auto;margin-right:auto}
-/* Affiliate section */
 .affiliate-section{background:linear-gradient(135deg,#F5F3FF,#EFF6FF);border-top:1px solid #E2E8F0;border-bottom:1px solid #E2E8F0;padding:64px 5%}
 .affiliate-inner{max-width:900px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:40px;flex-wrap:wrap}
 .affiliate-left{flex:1;min-width:280px}
@@ -146,7 +146,6 @@ footer{background:var(--navy);padding:40px 5%;color:#94A3B8}
 </head>
 <body>
 
-<!-- NAV -->
 <nav>
   <div class="nav-inner">
     <div class="logo">SLRI<span>NT</span></div>
@@ -165,7 +164,6 @@ footer{background:var(--navy);padding:40px 5%;color:#94A3B8}
   </div>
 </nav>
 
-<!-- HERO -->
 <div class="hero">
   <div class="hero-badge">🇮🇳 Built for Amazon.in Sellers</div>
   <h1>Intelligence. Ads Optimization.<br><span>Profits.</span></h1>
@@ -194,7 +192,6 @@ footer{background:var(--navy);padding:40px 5%;color:#94A3B8}
   </div>
 </div>
 
-<!-- PAIN POINTS -->
 <section class="pain" id="problem">
   <div class="section-inner">
     <div class="section-center">
@@ -211,7 +208,6 @@ footer{background:var(--navy);padding:40px 5%;color:#94A3B8}
   </div>
 </section>
 
-<!-- TOOLS -->
 <section id="tools">
   <div class="section-inner">
     <div class="section-center">
@@ -258,7 +254,6 @@ footer{background:var(--navy);padding:40px 5%;color:#94A3B8}
   </div>
 </section>
 
-<!-- HOW IT WORKS -->
 <section style="background:var(--bg)">
   <div class="section-inner section-center">
     <div class="section-tag">How It Works</div>
@@ -273,7 +268,6 @@ footer{background:var(--navy);padding:40px 5%;color:#94A3B8}
   </div>
 </section>
 
-<!-- COMPARISON -->
 <section id="compare">
   <div class="section-inner section-center">
     <div class="section-tag">Comparison</div>
@@ -303,23 +297,21 @@ footer{background:var(--navy);padding:40px 5%;color:#94A3B8}
   </div>
 </section>
 
-<!-- PRICING -->
 <section id="pricing" style="background:var(--bg)">
   <div class="section-inner section-center">
     <div class="section-tag">Pricing</div>
     <h2 class="section-title">Simple, transparent pricing in INR</h2>
     <p class="section-sub">Start free for 14 days. No credit card required. Cancel anytime.</p>
     <div class="pricing-grid">
-      <div class="price-card"><div class="plan-name">Pre-launch</div><div class="plan-price">₹999</div><div class="plan-period">/month</div><ul class="plan-features"><li>5 ASINs tracked</li><li>5 tools included</li><li>1 user</li><li>Email support</li></ul><a href="https://app.slrint.io" class="btn btn-ghost" style="width:100%;justify-content:center">Get Started</a></div>
-      <div class="price-card"><div class="plan-name">Starter</div><div class="plan-price">₹1,999</div><div class="plan-period">/month</div><ul class="plan-features"><li>10 ASINs tracked</li><li>7 tools included</li><li>2 users</li><li>Email support</li></ul><a href="https://app.slrint.io" class="btn btn-ghost" style="width:100%;justify-content:center">Get Started</a></div>
-      <div class="price-card popular"><div class="popular-badge">MOST POPULAR</div><div class="plan-name">Growth</div><div class="plan-price">₹4,999</div><div class="plan-period">/month</div><ul class="plan-features"><li>25 ASINs tracked</li><li>All intelligence tools</li><li>3 users</li><li>Priority support</li></ul><a href="https://app.slrint.io" class="btn btn-primary" style="width:100%;justify-content:center">Start Free Trial</a></div>
-      <div class="price-card"><div class="plan-name">Premium</div><div class="plan-price">₹11,999</div><div class="plan-period">/month</div><ul class="plan-features"><li>125 ASINs tracked</li><li>All tools + ads suite</li><li>5 users</li><li>Onboarding call</li></ul><a href="https://app.slrint.io" class="btn btn-ghost" style="width:100%;justify-content:center">Get Started</a></div>
+      <div class="price-card"><div class="plan-name">Pre-launch</div><div class="plan-price">₹999</div><div class="plan-period">/month</div><div class="plan-gst">+ 18% GST</div><ul class="plan-features"><li>5 ASINs tracked</li><li>5 tools included</li><li>1 user</li><li>Email support</li></ul><a href="https://app.slrint.io" class="btn btn-ghost" style="width:100%;justify-content:center">Get Started</a></div>
+      <div class="price-card"><div class="plan-name">Starter</div><div class="plan-price">₹1,999</div><div class="plan-period">/month</div><div class="plan-gst">+ 18% GST</div><ul class="plan-features"><li>10 ASINs tracked</li><li>7 tools included</li><li>2 users</li><li>Email support</li></ul><a href="https://app.slrint.io" class="btn btn-ghost" style="width:100%;justify-content:center">Get Started</a></div>
+      <div class="price-card popular"><div class="popular-badge">MOST POPULAR</div><div class="plan-name">Growth</div><div class="plan-price">₹4,999</div><div class="plan-period">/month</div><div class="plan-gst">+ 18% GST</div><ul class="plan-features"><li>25 ASINs tracked</li><li>All intelligence tools</li><li>3 users</li><li>Priority support</li></ul><a href="https://app.slrint.io" class="btn btn-primary" style="width:100%;justify-content:center">Start Free Trial</a></div>
+      <div class="price-card"><div class="plan-name">Premium</div><div class="plan-price">₹11,999</div><div class="plan-period">/month</div><div class="plan-gst">+ 18% GST</div><ul class="plan-features"><li>125 ASINs tracked</li><li>All tools + ads suite</li><li>5 users</li><li>Onboarding call</li></ul><a href="https://app.slrint.io" class="btn btn-ghost" style="width:100%;justify-content:center">Get Started</a></div>
     </div>
-    <p style="margin-top:24px;font-size:13px;color:var(--text-s)">All plans include a <strong style="color:var(--text)">14-day free trial</strong>. Need a custom plan? <a href="mailto:support@slrint.io" style="color:var(--blue)">Contact us</a>.</p>
+    <p style="margin-top:24px;font-size:13px;color:var(--text-s)">All plans include a <strong style="color:var(--text)">14-day free trial</strong>. GST input tax credit available for GST-registered businesses. Need a custom plan? <a href="mailto:support@slrint.io" style="color:var(--blue)">Contact us</a>.</p>
   </div>
 </section>
 
-<!-- TESTIMONIALS -->
 <section>
   <div class="section-inner section-center">
     <div class="section-tag">Early Access Sellers</div>
@@ -333,7 +325,6 @@ footer{background:var(--navy);padding:40px 5%;color:#94A3B8}
   </div>
 </section>
 
-<!-- AFFILIATE SECTION -->
 <div class="affiliate-section" id="affiliate">
   <div class="affiliate-inner">
     <div class="affiliate-left">
@@ -360,7 +351,6 @@ footer{background:var(--navy);padding:40px 5%;color:#94A3B8}
   </div>
 </div>
 
-<!-- CTA -->
 <div class="cta-section">
   <h2>Intelligence. Ads. Profits.<br>All in one place.</h2>
   <p>Join Amazon sellers across India who are making smarter decisions with Slrint.</p>
@@ -368,7 +358,6 @@ footer{background:var(--navy);padding:40px 5%;color:#94A3B8}
   <p style="margin-top:16px;font-size:13px;color:#64748B">No credit card · Full access · Cancel anytime</p>
 </div>
 
-<!-- FOOTER -->
 <footer>
   <div class="footer-inner">
     <div>
